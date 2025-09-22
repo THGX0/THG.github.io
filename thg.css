@@ -1,0 +1,177 @@
+/* --- General Styles --- */
+:root {
+    --main-black: #000000;
+    --main-red: #d40000;
+    --text-light: #f0f0f0;
+    --text-grey: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--main-black);
+    color: var(--text-light);
+}
+
+h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* --- Navigation Bar --- */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid var(--main-red);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--main-red);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--main-red);
+}
+
+/* --- Hero Section --- */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, #1a1a1a, var(--main-black));
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.brand-name {
+    font-size: 6rem;
+    color: var(--text-light);
+    text-shadow: 0 0 15px var(--main-red);
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--text-grey);
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid var(--main-red);
+    border-radius: 5px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--main-red);
+    box-shadow: 0 0 20px var(--main-red);
+}
+
+/* --- About Section --- */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.about-text, .about-visual {
+    flex: 1;
+    min-width: 300px;
+}
+
+.logo-placeholder {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-red);
+    text-shadow: 0 0 10px var(--main-red);
+}
+
+/* --- Panels Section --- */
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.panel-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.panel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px var(--main-red);
+    border-color: var(--main-red);
+}
+
+/* --- Footer --- */
+footer {
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
