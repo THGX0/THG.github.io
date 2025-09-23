@@ -62,9 +62,9 @@ nav ul {
 nav a {
     color: var(--text-light);
     text-decoration: none;
-    transition: color 0.3s ease;
+    position: relative; /* Required for the underline effect */
+    padding-bottom: 5px; /* Adds a little space for the underline */
 }
-
 nav a:hover {
     color: var(--main-red);
 }
@@ -288,6 +288,7 @@ footer {
     }
 
 }
+
 
 
 
