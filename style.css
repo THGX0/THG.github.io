@@ -242,3 +242,13 @@ footer {
 }
 
 
+/* --- Social Icon Styles (PNG Version) --- */
+.social-links img, .about-social-links img {
+    height: 30px; /* You can adjust the size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img, .about-social-links a:hover img {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
