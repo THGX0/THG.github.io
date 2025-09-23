@@ -65,8 +65,22 @@ nav a {
     position: relative; /* Required for the underline effect */
     padding-bottom: 5px; /* Adds a little space for the underline */
 }
-nav a:hover {
-    color: var(--main-red);
+/* Creates the hidden underline */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-red);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Makes the underline appear on hover */
+nav a:hover::after {
+    width: 100%;
 }
 
 /* --- Hero Section --- */
@@ -288,6 +302,7 @@ footer {
     }
 
 }
+
 
 
 
