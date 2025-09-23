@@ -252,3 +252,37 @@ footer {
 .social-links a:hover img, .about-social-links a:hover img {
     transform: scale(1.1); /* Slightly enlarges the icon on hover */
 }
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+
+    /* --- Navigation Menu --- */
+    nav {
+        flex-direction: column; /* Stacks the logo on top of the links */
+        gap: 1rem;
+    }
+
+    /* --- Hero Section Text --- */
+    .brand-name {
+        font-size: 3.5rem; /* Makes the main "THG" title smaller */
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Makes section titles like "Our Panels" smaller */
+    }
+
+
+    /* --- Layout and Spacing --- */
+    .about-content {
+        text-align: center; /* Centers the "About" text when it stacks */
+    }
+
+    section {
+        padding: 40px 15px; /* Reduces the side padding on all sections */
+    }
+
+}
