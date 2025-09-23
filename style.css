@@ -218,3 +218,19 @@ footer {
         transform: translateY(0);
     }
 }
+
+/* --- About Page Styles --- */
+#about-page {
+    padding-top: 120px; /* Pushes content down from header */
+    min-height: 80vh;
+}
+
+.about-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
