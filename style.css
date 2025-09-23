@@ -105,12 +105,12 @@ nav a:hover {
 .cta-button {
     display: inline-block;
     padding: 15px 35px;
-    border: none; /* Remove the old border */
+    border: none;
     color: var(--text-light);
     text-decoration: none;
     font-weight: 700;
-    background: linear-gradient(90deg, #c400ff, #ff003c); /* New gradient background */
-    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Creates the angled shape */
+    background: linear-gradient(90deg, var(--main-red), #8b0000); /* New red gradient */
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     transition: all 0.3s ease;
 }
 
@@ -295,4 +295,5 @@ footer {
     }
 
 }
+
 
