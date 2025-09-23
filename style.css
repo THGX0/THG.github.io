@@ -117,14 +117,15 @@ nav a:hover {
 
 /* --- About Section --- */
 .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: left;
+    animation: slideUp 1s ease-out; /* Add this line */
 }
 
 .about-text, .about-visual {
@@ -142,13 +143,14 @@ nav a:hover {
 
 /* --- Panels Section --- */
 .panel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    animation: slideUp 1s ease-out 0.3s; /* Add this line */
+    animation-fill-mode: backwards; /* Ensures it starts transparent */
 }
-
 .panel-card {
     background-color: #1a1a1a;
     border: 1px solid #333;
@@ -204,4 +206,15 @@ footer {
 /* --- Panel Link Style --- */
 .panel-link {
     text-decoration: none;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
