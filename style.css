@@ -188,3 +188,15 @@ footer {
     width: auto;
 }
 
+
+/* --- Footer Social Links --- */
+.social-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 10px; /* Adds space between the links */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--main-red);
+}
