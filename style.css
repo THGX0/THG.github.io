@@ -200,3 +200,8 @@ footer {
 .social-links a:hover {
     color: var(--main-red);
 }
+
+/* --- Panel Link Style --- */
+.panel-link {
+    text-decoration: none;
+}
