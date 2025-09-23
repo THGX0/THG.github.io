@@ -261,11 +261,12 @@ footer {
 .about-page-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center; /* Change this to center */
+    text-align: center;
     background-color: #1a1a1a;
     padding: 2rem;
     border-radius: 5px;
     border: 1px solid #333;
+    color: #f0f0f0; /* Add this line for light text */
 }
 /* --- Mobile Responsive Styles --- */
 @media (max-width: 768px) {
@@ -302,6 +303,7 @@ footer {
         padding: 40px 15px;
     }
 }
+
 
 
 
