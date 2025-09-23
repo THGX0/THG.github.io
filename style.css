@@ -34,14 +34,10 @@ section {
 
 /* --- Navigation Bar --- */
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     z-index: 100;
-    border-bottom: 1px solid var(--main-red);
 }
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -292,6 +288,7 @@ footer {
     }
 
 }
+
 
 
 
