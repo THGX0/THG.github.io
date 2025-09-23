@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 section {
-    padding: 60px 20px;
+    padding: 120px 20px 60px 20px; /* Top, Right, Bottom, Left */
     text-align: center;
 }
 
@@ -38,6 +38,7 @@ header {
     width: 100%;
     z-index: 100;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -47,25 +48,13 @@ nav {
     padding: 1rem;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--main-red);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
 nav a {
     color: var(--text-light);
     text-decoration: none;
-    position: relative; /* Required for the underline effect */
-    padding-bottom: 5px; /* Adds a little space for the underline */
+    position: relative;
+    padding-bottom: 5px;
 }
-/* Creates the hidden underline */
+
 nav a::after {
     content: '';
     position: absolute;
@@ -78,9 +67,14 @@ nav a::after {
     transition: width 0.3s ease-in-out;
 }
 
-/* Makes the underline appear on hover */
 nav a:hover::after {
     width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 }
 
 /* --- Hero Section --- */
@@ -99,8 +93,8 @@ nav a:hover::after {
 
 .brand-name {
     font-size: 6rem;
-    color: var(--main-red); /* Solid red color */
-    text-shadow: 0 0 25px rgba(212, 0, 0, 0.5); /* Subtle red glow */
+    color: var(--main-red);
+    text-shadow: 0 0 25px rgba(212, 0, 0, 0.5);
 }
 
 .tagline {
@@ -116,19 +110,14 @@ nav a:hover::after {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 700;
-    background: linear-gradient(90deg, var(--main-red), #8b0000); /* New red gradient */
+    background: linear-gradient(90deg, var(--main-red), #8b0000);
     clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    transform: scale(1.05); /* Slightly enlarges the button */
-    box-shadow: 0 0 25px rgba(255, 0, 60, 0.7); /* Adds a vibrant glow */
-}
-
-.cta-button:hover {
-    background-color: var(--main-red);
-    box-shadow: 0 0 20px var(--main-red);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.7);
 }
 
 /* --- About Section --- */
@@ -146,10 +135,10 @@ nav a:hover::after {
 .about-text {
     flex: 1;
     min-width: 300px;
-    background-color: rgba(20, 20, 20, 0.7); /* Dark semi-transparent background */
+    background-color: rgba(20, 20, 20, 0.7);
     border: 1px solid #444;
     padding: 2rem;
-    box-shadow: 0 0 20px rgba(212, 0, 0, 0.3); /* Red glow */
+    box-shadow: 0 0 20px rgba(212, 0, 0, 0.3);
     backdrop-filter: blur(5px);
 }
 
@@ -169,53 +158,38 @@ nav a:hover::after {
     height: auto;
     border-radius: 5px;
 }
-.about-text, .about-visual {
-    flex: 1;
-    min-width: 300px;
-}
-
-.logo-placeholder {
-    font-size: 5rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--main-red);
-    text-shadow: 0 0 10px var(--main-red);
-}
 
 /* --- Panels Section --- */
 .panel-grid {
-    display: flex; /* Changed from grid to flex */
-    justify-content: center; /* This will center the panels in the container */
-    flex-wrap: wrap; /* Allows wrapping on very small screens if needed */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     max-width: 1200px;
     margin: 2rem auto;
     animation: slideUp 1s ease-out 0.3s;
     animation-fill-mode: backwards;
 }
+
 .panel-card {
     background-color: #1a1a1a;
     border: 1px solid #333;
     padding: 0;
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .panel-card img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease; /* Add this line */
 }
+
 .panel-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 15px var(--main-red);
     border-color: var(--main-red);
-}
-
-.panel-card:hover img {
-    transform: scale(1.05); /* Zoom the image inside the card */
 }
 
 /* --- Footer --- */
@@ -231,30 +205,6 @@ footer {
     to { opacity: 1; }
 }
 
-/* --- Logo Image Style --- */
-.logo-img {
-    height: 40px; /* You can adjust this height */
-    width: auto;
-}
-
-
-/* --- Footer Social Links --- */
-.social-links a {
-    color: var(--text-light);
-    text-decoration: none;
-    margin: 0 10px; /* Adds space between the links */
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--main-red);
-}
-
-/* --- Panel Link Style --- */
-.panel-link {
-    text-decoration: none;
-}
-
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -266,26 +216,56 @@ footer {
     }
 }
 
-.about-page-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    background-color: #1a1a1a;
-    padding: 2rem;
-    border-radius: 5px;
-    border: 1px solid #333;
+/* --- Logo Image Style --- */
+.logo-img {
+    height: 40px;
+    width: auto;
 }
 
+/* --- Footer Social Links --- */
+.social-links, .about-social-links {
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
 
-/* --- Social Icon Styles (PNG Version) --- */
+.social-links svg, .about-social-links svg {
+    height: 30px;
+    fill: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover svg, .about-social-links a:hover svg {
+    fill: var(--main-red);
+    transform: scale(1.1);
+}
+
 .social-links img, .about-social-links img {
-    height: 30px; /* You can adjust the size */
+    height: 30px;
     width: auto;
     transition: transform 0.3s ease;
 }
 
 .social-links a:hover img, .about-social-links a:hover img {
-    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    transform: scale(1.1);
+}
+
+/* --- Panel Link Style --- */
+.panel-link {
+    text-decoration: none;
+}
+
+/* --- About Page Styles --- */
+.about-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* This line is now corrected */
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 1px solid #333;
 }
 
 /* --- Mobile Responsive Styles --- */
@@ -293,13 +273,17 @@ footer {
 
     /* --- Navigation Menu --- */
     nav {
-        flex-direction: column; /* Stacks the logo on top of the links */
+        flex-direction: column;
         gap: 1rem;
+    }
+
+    .logo-img {
+        height: 35px;
     }
 
     /* --- Hero Section Text --- */
     .brand-name {
-        font-size: 3.5rem; /* Makes the main "THG" title smaller */
+        font-size: 3.5rem;
     }
 
     .tagline {
@@ -307,19 +291,17 @@ footer {
     }
 
     h2 {
-        font-size: 1.5rem; /* Makes section titles like "Our Panels" smaller */
+        font-size: 1.5rem;
     }
-
 
     /* --- Layout and Spacing --- */
     .about-content {
-        text-align: center; /* Centers the "About" text when it stacks */
+        text-align: center;
     }
 
-   section {
-    padding: 120px 20px 60px 20px; /* Top, Right, Bottom, Left */
-    text-align: center;
-}
+    section {
+        padding: 40px 15px;
+    }
 }
 
 
