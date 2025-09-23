@@ -163,12 +163,17 @@ nav a:hover {
 .panel-card img {
     width: 100%;
     height: auto;
-    display: block; 
+    display: block;
+    transition: transform 0.3s ease; /* Add this line */
 }
 .panel-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 15px var(--main-red);
     border-color: var(--main-red);
+}
+
+.panel-card:hover img {
+    transform: scale(1.05); /* Zoom the image inside the card */
 }
 
 /* --- Footer --- */
@@ -234,3 +239,4 @@ footer {
     border-radius: 5px;
     border: 1px solid #333;
 }
+
