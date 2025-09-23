@@ -133,17 +133,42 @@ nav a:hover::after {
 
 /* --- About Section --- */
 .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-    text-align: left;
-    animation: slideUp 1s ease-out; /* Add this line */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    animation: slideUp 1s ease-out;
 }
 
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(20, 20, 20, 0.7); /* Dark semi-transparent background */
+    border: 1px solid #444;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(212, 0, 0, 0.3); /* Red glow */
+    backdrop-filter: blur(5px);
+}
+
+.about-text h3 {
+    color: var(--main-red);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-visual {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
 .about-text, .about-visual {
     flex: 1;
     min-width: 300px;
@@ -302,6 +327,7 @@ footer {
     }
 
 }
+
 
 
 
