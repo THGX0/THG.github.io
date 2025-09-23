@@ -143,13 +143,14 @@ nav a:hover {
 
 /* --- Panels Section --- */
 .panel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 2rem auto;
-    animation: slideUp 1s ease-out 0.3s; /* Add this line */
-    animation-fill-mode: backwards; /* Ensures it starts transparent */
+    display: flex; /* Changed from grid to flex */
+    justify-content: center; /* This will center the panels in the container */
+    flex-wrap: wrap; /* Allows wrapping on very small screens if needed */
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    animation: slideUp 1s ease-out 0.3s;
+    animation-fill-mode: backwards;
 }
 .panel-card {
     background-color: #1a1a1a;
@@ -239,4 +240,5 @@ footer {
     border-radius: 5px;
     border: 1px solid #333;
 }
+
 
