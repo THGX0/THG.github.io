@@ -293,36 +293,9 @@ footer {
 .splash-half {
     width: 100%;
     height: 50vh;
-    background-color: #000; /* Added black background for empty space */
+    background-color: #000;
     background-image: url('splash-logo.png');
-    background-size: contain; /* THIS IS THE FIX */
-    background-repeat: no-repeat; /* Added to prevent tiling */
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    transition: transform 1s ease-in-out;
-}
-
-#splash-top {
-    background-position: center top;
-}
-
-#splash-bottom {
-    background-position: center bottom;
-}
-
-#splash-screen.hidden #splash-top {
-    transform: translateY(-100%);
-}
-
-#splash-screen.hidden #splash-bottom {
-    transform: translateY(100%);
-}
-
-/* --- Blur Effect Styles --- */
-#main-content {
-    filter: blur(8px);
-    transition: filter 1.5s ease;
-}
-
-body.splash-hidden #main-content {
-    filter: blur(0px);
-}
+    transition: transform 1s ease-in
