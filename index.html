@@ -91,9 +91,15 @@
     </div> <script>
         window.addEventListener('scroll', function() {
             const splashScreen = document.getElementById('splash-screen');
-            if (window.scrollY > 20) {
+            // Check if the splash screen still exists to avoid errors
+            if (splashScreen) {
                 splashScreen.classList.add('hidden');
-                document.body.classList.add('splash-hidden'); // This triggers the unblur
+                document.body.classList.add('splash-hidden');
+
+                // This new part completely removes the splash screen after the animation
+                setTimeout(() => {
+                    splashScreen.remove();
+                }, 1500); // 1500ms = 1.5 seconds, to allow animation to finish
             }
         });
     </script>
