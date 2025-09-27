@@ -89,17 +89,12 @@
         </footer>
 
     </div> <script>
-        window.addEventListener('scroll', function() {
-            const splashScreen = document.getElementById('splash-screen');
-            // Check if the splash screen still exists to avoid errors
-            if (splashScreen) {
+        const splashScreen = document.getElementById('splash-screen');
+
+        splashScreen.addEventListener('click', function() {
+            if (splashScreen) { // Check if it exists before trying to add classes
                 splashScreen.classList.add('hidden');
                 document.body.classList.add('splash-hidden');
-
-                // This new part completely removes the splash screen after the animation
-                setTimeout(() => {
-                    splashScreen.remove();
-                }, 1500); // 1500ms = 1.5 seconds, to allow animation to finish
             }
         });
     </script>
