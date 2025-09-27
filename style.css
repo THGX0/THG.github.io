@@ -298,4 +298,35 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: transform 1s ease-in
+    transition: transform 1s ease-in-out;
+}
+
+#splash-top {
+    background-position: center top;
+}
+
+#splash-bottom {
+    background-position: center bottom;
+}
+
+#splash-screen.hidden #splash-top {
+    transform: translateY(-100%);
+}
+
+#splash-screen.hidden #splash-bottom {
+    transform: translateY(100%);
+}
+
+#splash-screen.hidden {
+    pointer-events: none; /* This is the fix for the freezing */
+}
+
+/* --- Blur Effect Styles --- */
+#main-content {
+    filter: blur(8px);
+    transition: filter 1.5s ease;
+}
+
+body.splash-hidden #main-content {
+    filter: blur(0px);
+}
