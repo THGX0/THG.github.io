@@ -84,9 +84,18 @@
 </div>
         </div>
     </footer>
-
+<script>
+    window.addEventListener('scroll', function() {
+        const splashScreen = document.getElementById('splash-screen');
+        // Hide the splash screen after the user scrolls down a little
+        if (window.scrollY > 20) {
+            splashScreen.classList.add('hidden');
+        }
+    });
+</script>
 </body>
 </html>
+
 
 
 
