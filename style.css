@@ -288,6 +288,7 @@ footer {
     height: 100vh;
     z-index: 200;
     overflow: hidden;
+    cursor: pointer; /* Lets users know it's clickable */
 }
 
 .splash-half {
@@ -318,7 +319,7 @@ footer {
 }
 
 #splash-screen.hidden {
-    pointer-events: none; /* This is the fix for the freezing */
+    pointer-events: none; /* The fix for the freezing */
 }
 
 /* --- Blur Effect Styles --- */
