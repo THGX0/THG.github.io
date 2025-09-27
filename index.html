@@ -10,93 +10,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div id="splash-screen">
-    <div class="splash-half" id="splash-top"></div>
-    <div class="splash-half" id="splash-bottom"></div>
-</div>
-    <header>
-        <nav>
-            <img src="logo.png" alt="THG Logo" class="logo-img">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#panels">Panels</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1 class="brand-name">THG</h1>
-                <p class="tagline">Power. Style. Identity.</p>
-                <a href="#panels" class="cta-button">Discover More</a>
-            </div>
-        </section>
-
-       <section id="about">
-    <h2>About Our Brand</h2>
-    <div class="about-content">
-        <div class="about-text">
-            <h3>// Our Philosophy</h3>
-            <p>THG represents the fusion of bold aesthetics and modern design. We are dedicated to creating products that embody strength and a sharp, futuristic identity. Our style is defined by high contrast, clean lines, and an energetic presence.</p>
-        </div>
-        <div class="about-visual">
-            <img src="logo.png" alt="THG Logo" class="logo-display">
-        </div>
+        <div class="splash-half" id="splash-top"></div>
+        <div class="splash-half" id="splash-bottom"></div>
     </div>
-</section>
 
-        <section id="panels">
-            <h2>Our Panels</h2>
-           <div class="panel-grid">
-    <a href="about.html" class="panel-link">
-        <div class="panel-card">
-            <img src="panel1.png" alt="About Me Panel">
-        </div>
-    </a>
-    <a href="https://paypal.me/Noorx2002?locale.x=ar_EG&country.x=SA" target="_blank" class="panel-link">
-        <div class="panel-card">
-            <img src="panel2.png" alt="Donate Panel">
-        </div>
-    </a>
-    <a href="https://www.youtube.com/@Im_sora1" target="_blank" class="panel-link">
-        <div class="panel-card">
-            <img src="panel3.png" alt="Subscribe Panel">
-        </div>
-    </a>
-</div>
-        </section>
+    <div id="main-content">
 
-    </main>
+        <header>
+            <nav>
+                <img src="logo.png" alt="THG Logo" class="logo-img">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#panels">Panels</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <footer id="contact">
-        <div class="footer-content">
-            <p>THG &copy; 2025</p>
-            <div class="social-links">
-    <a href="https://www.instagram.com/thg._x/" target="_blank" title="Instagram">
-        <img src="instagram.png" alt="Instagram Icon">
-    </a>
-    <a href="https://www.facebook.com/noor.gad.1232" target="_blank" title="Facebook">
-        <img src="facebook.png" alt="Facebook Icon">
-    </a>
-</div>
-        </div>
-    </footer>
-<script>
-    window.addEventListener('scroll', function() {
-        const splashScreen = document.getElementById('splash-screen');
-        // Hide the splash screen after the user scrolls down a little
-        if (window.scrollY > 20) {
-            splashScreen.classList.add('hidden');
-        }
-    });
-</script>
+        <main>
+            <section id="hero">
+                <div class="hero-content">
+                    <h1 class="brand-name">THG</h1>
+                    <p class="tagline">Power. Style. Identity.</p>
+                    <a href="#panels" class="cta-button">Discover More</a>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About Our Brand</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>// Our Philosophy</h3>
+                        <p>THG represents the fusion of bold aesthetics and modern design. We are dedicated to creating products that embody strength and a sharp, futuristic identity. Our style is defined by high contrast, clean lines, and an energetic presence.</p>
+                    </div>
+                    <div class="about-visual">
+                        <img src="logo.png" alt="THG Logo" class="logo-display">
+                    </div>
+                </div>
+            </section>
+
+            <section id="panels">
+                <h2>Our Panels</h2>
+                <div class="panel-grid">
+                    <a href="about.html" class="panel-link">
+                        <div class="panel-card">
+                            <img src="panel1.png" alt="About Me Panel">
+                        </div>
+                    </a>
+                    <a href="https://paypal.me/Noorx2002?locale.x=ar_EG&country.x=SA" target="_blank" class="panel-link">
+                        <div class="panel-card">
+                            <img src="panel2.png" alt="Donate Panel">
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/@Im_sora1" target="_blank" class="panel-link">
+                        <div class="panel-card">
+                            <img src="panel3.png" alt="Subscribe Panel">
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div class="footer-content">
+                <p>THG &copy; 2025</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thg._x/" target="_blank" title="Instagram">
+                        <img src="instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.facebook.com/noor.gad.1232" target="_blank" title="Facebook">
+                        <img src="facebook.png" alt="Facebook Icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div> <script>
+        window.addEventListener('scroll', function() {
+            const splashScreen = document.getElementById('splash-screen');
+            if (window.scrollY > 20) {
+                splashScreen.classList.add('hidden');
+                document.body.classList.add('splash-hidden'); // This triggers the unblur
+            }
+        });
+    </script>
+
 </body>
 </html>
-
-
 
 
 
