@@ -273,6 +273,42 @@ footer {
         padding: 40px 15px;
     }
 }
+/* --- Splash Screen Styles --- */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200; /* Ensures it's on top of everything */
+    overflow: hidden;
+}
+
+.splash-half {
+    width: 100%;
+    height: 50vh; /* Each half is 50% of the viewport height */
+    background-image: url('splash-logo.png');
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+}
+
+#splash-top {
+    background-position: center top;
+}
+
+#splash-bottom {
+    background-position: center bottom;
+}
+
+/* This is what happens when the 'hidden' class is added by the script */
+#splash-screen.hidden #splash-top {
+    transform: translateY(-100%);
+}
+
+#splash-screen.hidden #splash-bottom {
+    transform: translateY(100%);
+}
 
 
 
