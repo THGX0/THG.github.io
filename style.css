@@ -95,7 +95,5 @@ body.splash-hidden #main-content { filter: blur(0px); }
 
 /* --- RTL Styles for Arabic --- */
 [dir="rtl"] { text-align: right; }
-[dir="rtl"] nav { flex-direction: row-reverse; }
-[dir="rtl"] nav ul { margin-right: auto; margin-left: 0; }
-[dir="rtl"] #lang-switcher { margin-left: 0; margin-right: 2rem; }
 [dir="rtl"] .about-content { flex-direction: row-reverse; text-align: right; }
+
