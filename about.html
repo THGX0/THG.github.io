@@ -15,26 +15,22 @@
         <nav>
             <a href="index.html"><img src="logo.png" alt="THG Logo" class="logo-img"></a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html" data-key="nav_home">Home</a></li>
+                <li><a href="about.html" data-key="nav_about">About</a></li>
             </ul>
+            <button id="lang-switcher">العربية</button>
         </nav>
     </header>
 
     <main>
         <section id="about-page">
             <div class="about-page-content">
-                <h2>About Me</h2>
-                <p>Welcome to my creative space. My name is Noor, and I'm a multidisciplinary artist with a passion for bringing ideas to life through photography, editing, and design.</p>
-                <p>From behind the lens, I capture the stories and emotions that a single moment can hold. In the editing suite, I shape those moments with precision and care, ensuring every detail is perfect. As a designer, I build entire visual worlds, from logos to complete brand identities, all defined by a clean, bold, and futuristic aesthetic. THG is more than a brand; it's my commitment to quality and a unique visual signature in everything I create.</p>
-
+                <h2 data-key="about_page_title">About Me</h2>
+                <p data-key="about_page_p1">Welcome to my creative space...</p>
+                <p data-key="about_page_p2">From behind the lens...</p>
                 <div class="about-social-links">
-                    <a href="https://www.instagram.com/thg._x/" target="_blank" title="Instagram">
-                        <img src="instagram.png" alt="Instagram Icon">
-                    </a>
-                    <a href="https://www.facebook.com/noor.gad.1232" target="_blank" title="Facebook">
-                        <img src="facebook.png" alt="Facebook Icon">
-                    </a>
+                    <a href="https://www.instagram.com/thg._x/" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram Icon"></a>
+                    <a href="https://www.facebook.com/noor.gad.1232" target="_blank" title="Facebook"><img src="facebook.png" alt="Facebook Icon"></a>
                 </div>
             </div>
         </section>
@@ -46,5 +42,7 @@
         </div>
     </footer>
 
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
