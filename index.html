@@ -12,8 +12,7 @@
 <body>
 
     <div id="splash-screen">
-        <div class="splash-half" id="splash-top"></div>
-        <div class="splash-half" id="splash-bottom"></div>
+        <button id="enter-button">Enter</button>
     </div>
 
     <div id="main-content">
@@ -31,45 +30,18 @@
         </header>
 
         <main>
-            <section id="hero">
-                <div class="hero-content">
-                    <h1 class="brand-name" data-key="hero_title">THG</h1>
-                    <p class="tagline" data-key="hero_tagline">Power. Style. Identity.</p>
-                    <a href="#panels" class="cta-button" data-key="hero_button">Discover More</a>
-                </div>
-            </section>
-
-            <section id="about">
-                <h2 data-key="about_brand_title">About Our Brand</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3 data-key="about_brand_philosophy">// Our Philosophy</h3>
-                        <p data-key="about_brand_p1">THG represents the fusion of bold aesthetics and modern design...</p>
-                    </div>
-                    <div class="about-visual">
-                        <img src="logo.png" alt="THG Logo" class="logo-display">
-                    </div>
-                </div>
-            </section>
-
-            <section id="panels">
-                <h2 data-key="panels_title">Our Panels</h2>
-                <div class="panel-grid">
-                    <a href="about.html" class="panel-link">
-                        <div class="panel-card"><img src="panel1.png" alt="About Me Panel"></div>
-                    </a>
-                    <a href="https://paypal.me/Noorx2002?locale.x=ar_EG&country.x=SA" target="_blank" class="panel-link">
-                        <div class="panel-card"><img src="panel2.png" alt="Donate Panel"></div>
-                    </a>
-                    <a href="https://www.youtube.com/@Im_sora1" target="_blank" class="panel-link">
-                        <div class="panel-card"><img src="panel3.png" alt="Subscribe Panel"></div>
-                    </a>
-                </div>
-            </section>
-        </main>
+            </main>
 
         <footer id="contact">
-            <div class="footer-content">
-                <p>THG &copy; 2025</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/thg._x/" target="_blank" title="Instagram"><img src="instagram.png" alt="Instagram Icon
+            </footer>
+    </div>
+
+    <script>
+        document.getElementById('enter-button').addEventListener('click', function() {
+            document.getElementById('splash-screen').classList.add('hidden');
+        });
+    </script>
+    <script src="translations.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
