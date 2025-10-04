@@ -2,37 +2,55 @@ const translations = {
   "en": {
     "nav_home": "Home",
     "nav_about": "About",
+    "nav_products": "Products", // New
     "nav_panels": "Panels",
     "nav_contact": "Contact",
-    "hero_title": "THG",
     "hero_tagline": "Power. Style. Identity.",
     "hero_button": "Discover More",
     "about_brand_title": "About Our Brand",
     "about_brand_philosophy": "// Our Philosophy",
-    "about_brand_p1": "THG represents the fusion of bold aesthetics and modern design. We are dedicated to creating products that embody strength and a sharp, futuristic identity. Our style is defined by high contrast, clean lines, and an energetic presence.",
+    "about_brand_p1": "THG represents the fusion of bold aesthetics and modern design...",
     "panels_title": "Our Panels",
-    "footer_connect": "Connect with us on social media.",
     "about_page_title": "About Me",
     "about_page_subtitle": "// Photographer & Designer",
-    "about_page_p1": "Welcome to my creative space. My name is Noor, and I'm a multidisciplinary artist with a passion for bringing ideas to life through photography, editing, and design.",
-    "about_page_p2": "From behind the lens, I capture the stories and emotions that a single moment can hold. In the editing suite, I shape those moments with precision and care, ensuring every detail is perfect. As a designer, I build entire visual worlds, from logos to complete brand identities, all defined by a clean, bold, and futuristic aesthetic. THG is more than a brand; it's my commitment to quality and a unique visual signature in everything I create."
+    "about_page_p1": "Welcome to my creative space...",
+    "about_page_p2": "From behind the lens...",
+    "products_title": "Our Products", // New
+    "product_name_1": "Product Name 1", // New
+    "product_desc_1": "A short, compelling description of the first product goes here.", // New
+    "product_price_1": "$99.99", // New
+    "product_name_2": "Product Name 2", // New
+    "product_desc_2": "A short, compelling description of the second product goes here.", // New
+    "product_price_2": "$149.99", // New
+    "product_name_3": "Product Name 3", // New
+    "product_desc_3": "A short, compelling description of the third product goes here.", // New
+    "product_price_3": "$199.99" // New
   },
   "ar": {
     "nav_home": "الرئيسية",
     "nav_about": "حول",
+    "nav_products": "المنتجات", // New
     "nav_panels": "لوحات",
     "nav_contact": "اتصل بنا",
-    "hero_title": "THG",
     "hero_tagline": "قوة. أسلوب. هوية.",
     "hero_button": "اكتشف المزيد",
     "about_brand_title": "حول علامتنا التجارية",
     "about_brand_philosophy": "// فلسفتنا",
-    "about_brand_p1": "تمثل THG اندماج الجماليات الجريئة والتصميم الحديث. نحن ملتزمون بإنشاء منتجات تجسد القوة والهوية الحادة والمستقبلية. يتميز أسلوبنا بالتباين العالي والخطوط النظيفة والحضور المفعم بالحيوية.",
+    "about_brand_p1": "تمثل THG اندماج الجماليات الجريئة والتصميم الحديث...",
     "panels_title": "لوحاتنا",
-    "footer_connect": "تواصل معنا على وسائل التواصل الاجتماعي.",
     "about_page_title": "عني",
     "about_page_subtitle": "// مصور ومصمم",
-    "about_page_p1": "أهلاً بك في فضائي الإبداعي. اسمي نور، وأنا فنان متعدد التخصصات ولدي شغف بإحياء الأفكار من خلال التصوير الفوتوغرافي والمونتاج والتصميم.",
-    "about_page_p2": "من خلف العدسة، ألتقط القصص والمشاعر التي يمكن أن تحملها لحظة واحدة. في غرفة المونتاج، أقوم بتشكيل تلك اللحظات بدقة وعناية، مع التأكد من أن كل التفاصيل مثالية. كمصمم، أقوم ببناء عوالم بصرية كاملة، من الشعارات إلى هويات العلامات التجارية الكاملة، وكلها تتميز بجمالية نظيفة وجريئة ومستقبلية. THG هي أكثر من مجرد علامة تجارية؛ إنها التزامي بالجودة وبصمة بصرية فريدة في كل ما أقوم بإنشائه."
+    "about_page_p1": "أهلاً بك في فضائي الإبداعي...",
+    "about_page_p2": "من خلف العدسة...",
+    "products_title": "منتجاتنا", // New
+    "product_name_1": "اسم المنتج 1", // New
+    "product_desc_1": "وصف قصير وجذاب للمنتج الأول يوضع هنا.", // New
+    "product_price_1": "99.99 دولار", // New
+    "product_name_2": "اسم المنتج 2", // New
+    "product_desc_2": "وصف قصير وجذاب للمنتج الثاني يوضع هنا.", // New
+    "product_price_2": "149.99 دولار", // New
+    "product_name_3": "اسم المنتج 3", // New
+    "product_desc_3": "وصف قصير وجذاب للمنتج الثالث يوضع هنا.", // New
+    "product_price_3": "199.99 دولار" // New
   }
 };
