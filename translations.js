@@ -2,7 +2,7 @@ const translations = {
   "en": {
     "nav_home": "Home",
     "nav_about": "About",
-    "nav_products": "Products", // New
+    "nav_products": "Products",
     "nav_panels": "Panels",
     "nav_contact": "Contact",
     "hero_tagline": "Power. Style. Identity.",
@@ -15,21 +15,21 @@ const translations = {
     "about_page_subtitle": "// Photographer & Designer",
     "about_page_p1": "Welcome to my creative space...",
     "about_page_p2": "From behind the lens...",
-    "products_title": "Our Products", // New
-    "product_name_1": "Product Name 1", // New
-    "product_desc_1": "A short, compelling description of the first product goes here.", // New
-    "product_price_1": "$99.99", // New
-    "product_name_2": "Product Name 2", // New
-    "product_desc_2": "A short, compelling description of the second product goes here.", // New
-    "product_price_2": "$149.99", // New
-    "product_name_3": "Product Name 3", // New
-    "product_desc_3": "A short, compelling description of the third product goes here.", // New
-    "product_price_3": "$199.99" // New
+    "products_title": "Our Products",
+    "product_name_1": "Premium Headset", // New
+    "product_desc_1": "Experience immersive audio with our top-of-the-line gaming headset.", // New
+    "product_price_1": "550 EGP", // New
+    "product_name_2": "Product Name 2",
+    "product_desc_2": "A short, compelling description of the second product goes here.",
+    "product_price_2": "$149.99",
+    "product_name_3": "Product Name 3",
+    "product_desc_3": "A short, compelling description of the third product goes here.",
+    "product_price_3": "$199.99"
   },
   "ar": {
     "nav_home": "الرئيسية",
     "nav_about": "حول",
-    "nav_products": "المنتجات", // New
+    "nav_products": "المنتجات",
     "nav_panels": "لوحات",
     "nav_contact": "اتصل بنا",
     "hero_tagline": "قوة. أسلوب. هوية.",
@@ -42,15 +42,15 @@ const translations = {
     "about_page_subtitle": "// مصور ومصمم",
     "about_page_p1": "أهلاً بك في فضائي الإبداعي...",
     "about_page_p2": "من خلف العدسة...",
-    "products_title": "منتجاتنا", // New
-    "product_name_1": "اسم المنتج 1", // New
-    "product_desc_1": "وصف قصير وجذاب للمنتج الأول يوضع هنا.", // New
-    "product_price_1": "99.99 دولار", // New
-    "product_name_2": "اسم المنتج 2", // New
-    "product_desc_2": "وصف قصير وجذاب للمنتج الثاني يوضع هنا.", // New
-    "product_price_2": "149.99 دولار", // New
-    "product_name_3": "اسم المنتج 3", // New
-    "product_desc_3": "وصف قصير وجذاب للمنتج الثالث يوضع هنا.", // New
-    "product_price_3": "199.99 دولار" // New
+    "products_title": "منتجاتنا",
+    "product_name_1": "سماعة رأس فاخرة", // New
+    "product_desc_1": "استمتع بصوت غامر مع سماعتنا الرائدة للألعاب.", // New
+    "product_price_1": "550 جنيه مصري", // New
+    "product_name_2": "اسم المنتج 2",
+    "product_desc_2": "وصف قصير وجذاب للمنتج الثاني يوضع هنا.",
+    "product_price_2": "149.99 دولار",
+    "product_name_3": "اسم المنتج 3",
+    "product_desc_3": "وصف قصير وجذاب للمنتج الثالث يوضع هنا.",
+    "product_price_3": "199.99 دولار"
   }
 };
