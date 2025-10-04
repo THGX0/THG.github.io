@@ -29,10 +29,17 @@
             <div class="product-grid">
 
                 <div class="product-card">
-                    <img src="product-image-1.png" alt="Product 1">
-                    <h3 data-key="product_name_1">Product Name 1</h3>
-                    <p data-key="product_desc_1">A short, compelling description of the first product goes here.</p>
-                    <div class="product-price" data-key="product_price_1">$99.99</div>
+                    <div class="slider-container">
+                        <div class="slider-images">
+                            <img src="product1-a.png" alt="Product 1 Image 1">
+                            <img src="product1-b.png" alt="Product 1 Image 2">
+                        </div>
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
+                    <h3 data-key="product_name_1">Premium Headset</h3>
+                    <p data-key="product_desc_1">Experience immersive audio with our top-of-the-line gaming headset.</p>
+                    <div class="product-price" data-key="product_price_1">550 EGP</div>
                 </div>
 
                 <div class="product-card">
@@ -61,5 +68,33 @@
 
     <script src="translations.js"></script>
     <script src="app.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliderImages = document.querySelector('.slider-images');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const images = document.querySelectorAll('.slider-images img');
+
+            if (sliderImages) {
+                let currentIndex = 0;
+                const totalImages = images.length;
+
+                function updateSlider() {
+                    sliderImages.style.transform = `translateX(${-currentIndex * 100}%)`;
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % totalImages;
+                    updateSlider();
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                    updateSlider();
+                });
+            }
+        });
+    </script>
 </body>
 </html>
