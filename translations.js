@@ -16,9 +16,9 @@ const translations = {
     "about_page_p1": "Welcome to my creative space...",
     "about_page_p2": "From behind the lens...",
     "products_title": "Our Products",
-    "product_name_1": "Premium Headset", // New
-    "product_desc_1": "Experience immersive audio with our top-of-the-line gaming headset.", // New
-    "product_price_1": "550 EGP", // New
+    "product_name_1": "MORDEKAISER the conquerer",
+    "product_desc_1": "Unleash the Iron Revenant. This exclusive Mordekaiser t-shirt, inspired by the iconic champion from League of Legends, is a must-have for any conquerer.", // Updated Description
+    "product_price_1": "550 EGP",
     "product_name_2": "Product Name 2",
     "product_desc_2": "A short, compelling description of the second product goes here.",
     "product_price_2": "$149.99",
@@ -43,9 +43,9 @@ const translations = {
     "about_page_p1": "أهلاً بك في فضائي الإبداعي...",
     "about_page_p2": "من خلف العدسة...",
     "products_title": "منتجاتنا",
-    "product_name_1": "سماعة رأس فاخرة", // New
-    "product_desc_1": "استمتع بصوت غامر مع سماعتنا الرائدة للألعاب.", // New
-    "product_price_1": "550 جنيه مصري", // New
+    "product_name_1": "موردكايزر الفاتح",
+    "product_desc_1": "أطلق العنان لـ 'Iron Revenant'. هذا التيشيرت الحصري لموردكايزر، المستوحى من البطل الشهير في لعبة League of Legends، قطعة أساسية لكل فاتح.", // Updated Description
+    "product_price_1": "550 جنيه مصري",
     "product_name_2": "اسم المنتج 2",
     "product_desc_2": "وصف قصير وجذاب للمنتج الثاني يوضع هنا.",
     "product_price_2": "149.99 دولار",
