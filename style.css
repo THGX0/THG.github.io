@@ -147,3 +147,48 @@ body.splash-hidden #main-content { filter: blur(0px); }
     font-weight: 700;
     color: var(--main-red);
 }
+
+/* --- Product Image Slider Styles --- */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.slider-container:hover .slider-btn {
+    opacity: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
