@@ -37,8 +37,8 @@
                         <button class="slider-btn prev-btn">&lt;</button>
                         <button class="slider-btn next-btn">&gt;</button>
                     </div>
-                    <h3 data-key="product_name_1">Premium Headset</h3>
-                    <p data-key="product_desc_1">Experience immersive audio with our top-of-the-line gaming headset.</p>
+                    <h3 data-key="product_name_1">MORDEKAISER the conquerer</h3>
+                    <p data-key="product_desc_1">Unleash the Iron Revenant. This exclusive Mordekaiser t-shirt, inspired by the iconic champion from League of Legends, is a must-have for any conquerer.</p>
                     <div class="product-price" data-key="product_price_1">550 EGP</div>
                 </div>
 
@@ -81,8 +81,25 @@
                 const totalImages = images.length;
 
                 function updateSlider() {
-                    sliderImages.style.transform = `translateX(${-currentIndex * 100}%)`;
+                    // This function now checks the language direction
+                    const direction = document.documentElement.dir === 'rtl' ? 1 : -1;
+                    sliderImages.style.transform = `translateX(${direction * currentIndex * 100}%)`;
                 }
+                
+                // We need to re-run updateSlider when the language changes.
+                // We can listen for a change on the lang-switcher button text.
+                const langSwitcher = document.getElementById('lang-switcher');
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.type === 'childList') {
+                            updateSlider();
+                        }
+                    });
+                });
+                if(langSwitcher) {
+                  observer.observe(langSwitcher, { childList: true });
+                }
+
 
                 nextBtn.addEventListener('click', () => {
                     currentIndex = (currentIndex + 1) % totalImages;
