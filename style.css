@@ -192,3 +192,38 @@ body.splash-hidden #main-content { filter: blur(0px); }
 .next-btn {
     right: 10px;
 }
+
+/* --- Policy Page Styles --- */
+#policy-page {
+    padding-top: 120px;
+}
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: left;
+}
+.policy-content h3 {
+    color: var(--main-red);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.policy-content ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+/* --- Footer Link Styles --- */
+.footer-links {
+    margin-bottom: 1rem;
+}
+.footer-links a {
+    color: var(--text-grey);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: var(--main-red);
+}
