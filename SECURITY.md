@@ -15,7 +15,7 @@ The security of this project is a top priority. If you discover a security vulne
 **Please do not create a public GitHub issue.**
 
 Instead, please report any potential vulnerabilities via email to:
-**[www.noorx2002@gmail.com]**
+**[thgx2002@gmail.com]**
 
 Please include the following in your report:
 - A description of the vulnerability.
