@@ -1,6 +1,6 @@
 # THG Brand Website
 
-![Splash Screen Logo](https://raw.githubusercontent.com/THGX0/THG.github.io/main/splash-logo.png)
+![THG Logo](logo.png)
 
 This repository contains the source code for the official THG brand website, a personal portfolio and project showcase.
 
