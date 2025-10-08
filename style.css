@@ -227,3 +227,37 @@ body.splash-hidden #main-content { filter: blur(0px); }
 .footer-links a:hover {
     color: var(--main-red);
 }
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+
+    .brand-name {
+        font-size: 3.5rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+}
