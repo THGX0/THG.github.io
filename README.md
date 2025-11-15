@@ -4,7 +4,7 @@
 
 This repository contains the source code for the official THG brand website, a personal portfolio and project showcase.
 
-**Visit the live website:** [**https://thgx0.github.io/**](https://thgx0.github.io/)
+**Visit the live website:** [**https://thgx0.github.io/**](https://thgx.github.io/)
 
 ---
 
